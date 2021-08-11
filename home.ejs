@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Let's vote-The Election Commission Of India</title>
+
+  <!-- font Awesome -->
+  <script src="https://kit.fontawesome.com/1f5fdbe78b.js" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+
+
+  <!-- google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&family=Merriweather:ital,wght@1,700&family=Montserrat:wght@500&family=Roboto:ital,wght@1,900&display=swap" rel="stylesheet">
+
+
+  <!-- CSS stylesheets -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="/app.css">
+
+  <!-- bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <section id="voting">
+    <div class="total container-fluid">
+    <h1 class="main_heading"><strong>The Election Commission Of India</h1></strong>
+      <p> Vote Your Representative to join <strong><%= count %></strong> others on the path. </p>
+      <form method="POST" action='/register'>
+        <input type="number" class="form form-control-lg" name="voter_id" placeholder="Enter Your VoterID Number"><br>
+        <input type="number" class="form form-control-lg" name="aadhar_id" placeholder="Enter Your AadharID Number"> <br>
+
+        <div class="row">
+          <div class=" col-lg-4">
+            <div class="card">
+              <div class="card-header">
+                <img class="img-fluid" src="25.png" alt="BJP">
+              </div>
+              <div class="card-body BJP">
+                <input type="radio" name="parties" value="BJP" class="alarm"> <B> BJP </B>
+              </div>
+            </div>
+          </div>
+
+          <div class=" col-lg-4 ">
+            <div class="card">
+              <div class="card-header">
+                <img class="img-fluid" src="23.png" alt="Congress">
+              </div>
+              <div class="card-body congress">
+                <input type="radio" name="parties" value="congress"  class="alarm"> <B>  Congress </b>
+              </div>
+            </div>
+          </div>
+          <div class=" col-lg-4">
+            <div class="card">
+              <div class="card-header">
+                <img class="img-fluid" src="21.png" alt="AAP">
+              </div>
+              <div class="card-body AAP">
+                <input type="radio" name="parties" value="AAP" class="alarm" > <B> AAP </B>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button class="btn btn-primary btn-lg">Vote Now</button>
+
+  </section>
+
+  <section id="testimonials">
+    <div id="testamonial-carousel" class="carousel slide" data-ride="false">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <h2>Kings have gone, the power is with people.</h2>
+          <img class="testimonial-image" src="sv3.png" alt="vivekananda_img">
+          <em>Swami Vivekananda,India.</em>
+        </div>
+        <div class="carousel-item">
+          <h2 class="testimonial-text">The ballot is stronger than a bullet.</h2>
+          <img class="testimonial-image" src="tagore-3.png" alt="tagore">
+          <em>Tagore,Author of Janaganamana.</em>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#testamonial-carousel" role=" button" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#testamonial-carousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+
+  </section>
+
+  <section id="contact">
+    <div class="contact_me container-fluid">
+
+      <i class="social-icon fab fa-twitter"></i>
+      <i class="social-icon fab fa-facebook-f"></i>
+      <i class="social-icon fab fa-instagram"></i>
+      <i class="social-icon fas fa-envelope"></i>
+      <p class="Address"><strong>Address:</strong> Nirvachan Sadan, Ashoka Road, New Delhi 110001</p>
+      <p class="Address-1"><strong>Control Room:</strong>23052220, 23052221</p>
+      <p class="Copyright">© Copyright 2020 S.Bhanukiran</p>
+
+    </div>
+
+  </section>
+
+<script src="/index.js" charset="utf-8"></script>
+</body>
+</html>

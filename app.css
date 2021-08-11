@@ -1,0 +1,106 @@
+body {
+  text-align: center;
+}
+
+#voting {
+  padding: 60px ;
+  background-color: black;
+  background-color: black;
+  background-image: url('re-3.png');
+  background-position: center;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.main_heading {
+  color: #ffa36c;
+  font-family: 'Roboto', sans-serif;
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+  font-weight: 100;
+  font-size: 100px;
+}
+
+input[type=number] {
+  color: #ffff;
+  margin: 10px;
+}
+input[type=radio] {
+  margin: 10px;
+  border: 0px;
+  width: 100%;
+  height: 2em;
+}
+
+
+
+::placeholder {
+  color: #ffffdd;
+  opacity: 1;
+}
+
+.form {
+  border: solid 3px #ebebeb;
+  border-radius: 4px;
+	line-height: 1.5;
+	margin-top: 100px;
+	width: 700px;
+	font-size: 2.9em;
+	color: white;
+	padding: 12px 10px;
+	background: transparent;
+}
+
+p {
+  color: #ffffdd;
+  font-size: 35px;
+  font-family: 'Merriweather', serif;
+}
+b{
+  font-size: 2rem;
+}
+button{
+  margin: 20px;
+}
+#testimonials {
+  text-align: center;
+  background-color: #bfcfff;
+  color: #fff;
+}
+
+.testimonial-image {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+.carousel-item {
+  padding: 5% 15%;
+}
+.contact{
+background-color: #aee7e8;
+}
+
+.contact_me{
+  background-color: #aee7e8;
+}
+.social-icon{
+  margin: 3%;
+}
+.Address{
+  color: #ff9a76;
+  font-size: 2rem;
+  margin: 0px;
+}
+.Address-1{
+  font-size: 1.5rem;
+  color: #ff9a76;
+  margin: 0px;
+}
+.Copyright{
+  color: #c70039;
+  font-size: 1rem;
+  margin-bottom: 0px;
+}
+.pressed{
+  background-color: #3282b8;
+}
